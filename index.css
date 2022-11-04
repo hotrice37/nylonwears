@@ -1,0 +1,72 @@
+#landing .container-fluid{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),  url(/images/00-holding-mini-dress.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins, sans-serif;
+    position: fixed;
+}
+
+#landing .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#landing hr{
+    width: 30rem;
+    height: 3px;
+    background-color: #fff;
+    color: #fff;
+    border: none;
+}
+
+#landing #enter{
+    background-color: #000;
+    color: #fff; 
+    width: 10rem; 
+    bottom: 8rem;
+}
+
+#landing #enter:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+#landing #enter:focus{
+    outline: dashed rgb(3, 2, 2) 3px;
+    outline-offset: 2px;
+}
+
+#landing #enter:active{
+    background-color: rgb(190, 190, 190);
+    color: rgba(12, 10, 10, 0.637);
+    border: 1px solid rgb(190, 190, 190);
+    transition: 0.1s;
+}
+
+#landing a:link {
+    text-decoration: none;
+}
+
+#landing a:visited {
+    text-decoration: none;
+}
+
+#landing a:hover{
+    text-decoration: none;
+}
+
+#landing a:active {
+    text-decoration: none;
+}

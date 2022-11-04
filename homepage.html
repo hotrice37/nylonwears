@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>NylonWears</title>
 
-   <!-------- CSS ------->
-   <link rel="stylesheet" type="" href="homepage.css">
+  <!-------- CSS ------->
+  <link rel="stylesheet" type="" href="homepage.css">
   
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
@@ -19,17 +20,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
-<body>
-  <!--Homepage-->
-  <div class="container-fluid vh-100" style="width: 100%; height: 100%; left: 0px; top: 0px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/background-homepage.jpg); background-size: cover;">
+<body background-color="black">
+  <!--Navbar-->
+  <div class="container-fluid p-0" background-color = "black">
       
     <!--Navigation bar Start-->
-    <nav class="navbar navbar-expand-lg" style="font-family: poppins, sans-serif">
+    <nav class="fixed-top autohide m-0 p-0 navbar navbar-expand-lg bg-dark" style="font-family: poppins, sans-serif">
       <div class="container align-items-center m-4">
           
         <!--Categories button-->
         <a class="text-white btn btn-default m-0 p-0 border-0" href="#categories" role="button" data-bs-toggle="offcanvas"><i class="bi bi-list m-0 p-0 h1"></i></button>
-        <a class="text-white navbar-brand h1 col-9 col-sm-5 col-md-4 col-lg-5 col-xl-5 p-0 ms-lg-4 ms-md-2 ms-sm-3 ms-0 me-sm-auto me-4 my-0 text-start text-uppercase"><h1 class="text-start p-0 m-0 fw-bold">NylonWears</h1></a>
+        <a href="#homepage" class="text-white navbar-brand h1 col-9 col-sm-5 col-md-4 col-lg-5 col-xl-5 p-0 ms-lg-4 ms-md-2 ms-sm-3 ms-0 me-sm-auto me-4 my-0 text-start text-uppercase"><h1 class="text-start p-0 m-0">NylonWears</h1></a>
 
         <!--Collapse buttons Start-->
         <div class="row-sm-auto">
@@ -41,8 +42,8 @@
         <!--Menu bar Start-->
         <div class="fw-semibold collapse navbar-collapse col-xl-4 col-lg-3 col-md-4 mx-md-4 mx-sm-5 my-md-auto my-sm-2 me-lg-5 ms-lg-5 mx-xl-auto" id="browse">
           <div class="navbar-nav">
-            <a class="text-white nav-link">Design Yourself</a>
-            <a class="text-white nav-link">New Arrivals</a>
+            <a class="text-white nav-link" href="#products">Products</a>
+            <a href="#homepage#New-Arrivals" class="text-white nav-link">New Arrivals</a>
             <a class="text-white nav-link">Contact Us</a>
           </div>
         </div>
@@ -60,387 +61,723 @@
       </div>
     </nav>
     <!--Navigation bar End-->
-
+    
     <!--Categories Start-->
     <div class="offcanvas offcanvas-start" id="categories">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title">Categories</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
       </div>
-      <div class="offcanvas-body">hlo</div>
+      
+      <div class="offcanvas-body">
+        <div class="select">
+          <p>All categories</p>
+          <img src="images/dropdown.png">
+          <ul>
+            <li class="options">All categories</li>
+            <li class="options">Shirt</li>
+            <li class="options">Pants</li>
+            <li class="options">Shoes</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!--Categories End-->
 
     <!--Login Start-->
     <div class="offcanvas offcanvas-end" id="login">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title">login</h5>
+        <h5 class="offcanvas-title">Login Screen</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
       </div>
-      <div class="offcanvas-body">hlo</div>
+
+      <div class="offcanvas-body"> 
+        <div class="login_screen">
+          <h1>WEAR THE BEST CLOTHES</h1>
+          <form method="post">
+            <div class="txt_field">
+              <input type="text" required>
+              <span></span>
+              <label>EMAIL ADDRESS</label>
+            </div>
+            <div class="txt_field">
+              <input type="password" required>
+              <span></span>
+              <label>PASSWORD</label>
+            </div>
+            <div class="pass">Forget Password ?</div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+              Already have an account? <a href="#">Sign up</a> 
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <!--Login End-->
-  <!----------search button--------->
-  <div class="search">
-    <form action="" class="search-bar">
-      <input type="text" placeholder="Search Anything" name="q">
-      <button type = "submit" class="h1 text-white m-0" style="background: transparent"><i class="bi bi-search"></i></button>
-    </form>
-  </div>
-
 
   </div>
+  <!--Homepage-->
+  <section id="homepage">
 
-<!-------------- featured categories ------------------> 
-<div class="row mx-xxl-5 px-xxl-5">
-  <div class="small-container">
-      <div class="column">
-          <img src="images/man.png">
-         </div>
-         <div class="column">
-          <img src="images/kid.png">
-         </div>
-         
-         <div class="column">
-          <img src="images/women.png">
-         </div>
-  </div>
-</div>
 
-  <!-------------- featured products ------------------>
-  <div class="small-container">
-    <h2 class="title">Featured Products</h2>
-    <div class="row">
-      <div class="col-3">
-        <div class="center">
-          <img src="images/man1.png">
-          <h4>Shorts for Men</h4>
-          <div class="rating">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
+    <!--Carousel--
+    <div class="container-fluid products pt-5 px-5">  
+      <div id="carousel" class="black carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/images/00-holding-mini-dress.png" class="d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
             </div>
-            <p>Rs 549</p>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/00-holding-mini-dress.png" class="d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/00-holding-mini-dress.png" class="d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    !--Carousel End-->
+
+
+
+    <div class="container-fluid pt-4 products px-5" style="font-family: poppins, sans-serif">
+      <!--Featured Products-->
+      <div class="row m-auto">  
+        <div class="col"><h2 class="title">Featured Products</h2></div>
+      </div>
+      <div class="row px-5 mx-5">
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/man1.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Shorts for Men</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 549</p>
+            </div>
           </div>
         </div>
         <div class="col-3">
-          <div class="center">
-            <img src="images/women1.png">
-            <h4>Stitched Ladies Kurti</h4>
-            <div class="rating">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/women1.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Stitched Ladies Kurti</h6>
+              <p class="card-text"><div class="rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star"></i>
                 <i class="bi bi-star"></i>
                 <i class="bi bi-star"></i>
-              </div>
-              <p>Rs 595</p>
+              </div></p>
+              <p class="card-footer">Rs 595</p>
             </div>
           </div>
-          <div class="col-3">
-            <div class="center">
-              <img src="images/kid1.png">
-              <h4>Baby Suit Unisex</h4>
-              <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                </div>
-                <p>Rs 750</p>
-              </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/kid1.png" class="card-img-top">
             </div>
-            <div class="col-3">
-              <div class="center">
-                <img src="images/boot.png">
-                <h4>Adidas Boys Predator</h4>
-                <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                  </div>
-                  <p>Rs 13,500</p>
-                </div>
-              </div>
-
+            <div class="card-body">
+              <h6 class="card-title">Baby Suit Unisex</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 750</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/boot.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Nylon Boys Predator</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 13,500</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!--Featured Products End-->
+    </div>    
+      
+    <div id="New-Arrivals" class="container-fluid pt-4 products px-5" style="font-family: poppins, sans-serif">
+      <!--New Arrivals-->
+      <div class="row">  
+        <div class="col"><h2 class="title">New Arrivals</h2></div>
+      </div>  
+      <div class="row px-5 mx-5">
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Dzyne Printed Stiched Ladies Kurti.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Dzyne Printed Kurti</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 820</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Free-Fire T-shirt Unisex.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Free-Fire T-shirt Unisex</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 650</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Men Dress Shoes.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Men Dress Shoes</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 1,499</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Calliope Wide Pant.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Calliope Wide Pant</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 2,650</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <h2 class="title">New Arrivals</h2>
-    <div class="row">
-      <div class="col-3">
-          <div class="center">
-              <img src="images/Dzyne Printed Stiched Ladies Kurti.png">
-          <h4>Dzyne Printed Stiched Ladies Kurti</h4>
-          <div class="rating">
-              <i class="bi bi-star-fill"></i>
+
+      <div class="row px-5 mx-5">
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/George Frock.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">George Frock</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 950</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Al Shirt.png"class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Al Shirt for Men</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 1,050</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Basic T-shirt.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Basic Women T-Shirt</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 750</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Cool Club Baby Trousers.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Cool Baby Trousers</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 1,250</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </div> 
+      
+    <!------------------------Testimonial-------------------->
+    <div class="container-fluid black">
+      <div class="testimonial">
+        <div class="row mx-5 px-5">
+          <div class="col-4 card align-items-center text-bg-dark">
+            <i class="bi bi-quote"></i>
+            <p>STYLE IS A DEEPLY PERSONAL EXPRESSION OF WHO YOU ARE, AND EVERY TIME YOU DRESS, YOU ARE ASSRETING A PART OF YOURSELF.</p>
+            <div class="rating">
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star"></i>
-              
-          </div>
-          <p>Rs 820</p>
-          </div>
-          </div>
-            <div class="col-3">
-                <div class="center">
-                    <img src="images/Free-Fire T-shirt Unisex.png">
-                <h4>Free-Fire T-shirt Unisex</h4>
-                <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    
-                </div>
-                <p>Rs 650</p>
-                </div>
-                </div>
-                <div class="col-3">
-                  <div class="center">
-                      <img src="images/Men Dress Shoes.png">
-                  <h4>Men Dress Shoes</h4>
-                  <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star"></i>
-                      
-                  </div>
-                  <p>Rs 1,499</p>
-                  </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="center">
-                        <img src="images/Calliope Wide Pant.png">
-                    <h4>Calliope Wide Pant</h4>
-                    <div class="rating">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star"></i>
-                        
-                    </div>
-                    <p>Rs 2,650</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="center">
-                        <img src="images/George Frock.png">
-                    <h4>George Frock</h4>
-                    <div class="rating">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        
-                    </div>
-                    <p>Rs 950</p>
-                    </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="center">
-                          <img src="images/Al Shirt.png">
-                      <h4>Al Shirt for Men</h4>
-                      <div class="rating">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star"></i>
-                          <i class="bi bi-star"></i>
-                          <i class="bi bi-star"></i>
-                          
-                      </div>
-                      <p>Rs 1,050</p>
-                      </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="center">
-                            <img src="images/Basic T-shirt.png">
-                        <h4>Basic T-shirt for women</h4>
-                        <div class="rating">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            
-                        </div>
-                        <p>Rs 750</p>
-                        </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="center">
-                              <img src="images/Cool Club Baby Trousers.png">
-                          <h4>Cool Club Baby Trousers</h4>
-                          <div class="rating">
-                              <i class="bi bi-star-fill"></i>
-                              <i class="bi bi-star-fill"></i>
-                              <i class="bi bi-star-fill"></i>
-                              <i class="bi bi-star"></i>
-                              <i class="bi bi-star"></i>
-                              
-                          </div>
-                          <p>Rs 1,250</p>
-                          </div>
-                        </div>
-        </div>
-  </div>  
-          
-<!------------------------Testimonial-------------------->
-<div class="tesimonial">
-  <div class="small-container">
-      <div class="row mx-5 px-5">
-          <div class="col-4">
-              <i class="bi bi-quote"></i>
-              <p> STYLE IS A DEEPLY      
-                  PERSONAL EXPRESSION
-                  OF WHO YOU ARE, AND EVERY TIME
-                  YOU DRESS, YOU ARE ASSRETING
-                  A PART OF YOURSELF 
-              </p>
-                  <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      
-                  </div>
-                  <img src="images/user-1.png">
-                  <h3>Nina García</h3>
-              </div>
-              <div class="col-4">
-                  <i class="bi bi-quote"></i>
-                  <p>STYLE IS VERY PERSONAL.
-                      IT HAS NOTHING TO DO WITH FASHION.
-                      FASHION IS OVER QUICKLY.
-                      STYLE IS FOREVER.
-                  </p>
-                      <div class="rating">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star"></i>
-                          <i class="bi bi-star"></i>
-                          
-                      </div>
-                      <img src="images/user-2.png">
-                      <h3>Ralph Lauren</h3>
-                  </div>
-                  <div class="col-4">
-                      <i class="bi bi-quote"></i>
-                      <p>STYLE IS A WAY TO 
-                          SAY WHO YOU ARE 
-                          WITHOUT HAVING TO SPEAK.
-                      </p>
-                          <div class="rating">
-                              <i class="bi bi-star-fill"></i>
-                              <i class="bi bi-star-fill"></i>
-                              <i class="bi bi-star-fill"></i>
-                              <i class="bi bi-star"></i>
-                              <i class="bi bi-star"></i>
-                              
-                          </div>
-                          <img src="images/user-3.png">
-                          <h3>Rachel Zoe</h3>
-                      </div>
-      </div>
-  </div>
-  
-</div>
-
-<!-------------------------- Brands ------------------------>
-
-<div class="brands">
-  <div class="small-container">
-      <div class="row mx-5 px-5">
-          <div class="col-3">
-              <img src="images/ESewa.png">
-          </div>
-          <div class="col-3">
-              <img src="images/Khalti.png">
-          </div>
-          <div class="col-3">
-              <img src="images/IME PAY.png">
-          </div>
-          <div class="col-3">
-            <img src="images/Phone Pay.png">
-        </div>
-         
-      </div>
-  </div>
-</div>
-
-<!------------------footer----------------->
-
-        <div class="footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-3">
-                <h3>Download our App</h3>
-                <p>Download App for Android and ios mobile phone.</p>
-                <div class="app-logo">
-                  <img src="images/play store.png">
-                  <img src="images/app store.png">
-                </div>
-              </div>
-              <div class="col-3">
-                <img src="images/logo.png">
-                <p>Our Purpose Is To Provide An Easy-To-Use Website Model, Espically For 
-                  Small Business.</p>
-                </div>
-                <div class="col-3">
-                  <h3>Produced By</h3>
-                  <ul>
-                    <li>Binaya Raj Thapa</li>
-                    <li>Shubin Pokhrel</li>
-                    <li>Shashwat Khadka</li>
-                    <li>Siddhartha Lal Pradhan</li>
-                  </ul>
-                </div>
-                <div class="col-3">
-                  <h3>Follow us on</h3>
-                  <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
-                    <li>Linked In</li>
-                  </ul>
-                </div>
-              </div>
-              <hr>
-              <p class="thanks">THANK YOU FOR USING OUR WEBSITE</p>
+              <i class="bi bi-star"></i>    
             </div>
-          </div>  
-          
-             
+            <img src="images/user-1.png">
+            <h3>Nina García</h3>
+          </div>
+          <div class="col-4 card align-items-center text-bg-dark">
+            <i class="bi bi-quote"></i>
+            <p>STYLE IS VERY PERSONAL. IT HAS NOTHING TO DO WITH FASHION. FASHION IS OVER QUICKLY. STYLE IS FOREVER.</p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>  
+            </div>
+            <img src="images/user-2.png">
+            <h3>Ralph Lauren</h3>
+          </div>
+          <div class="col-4 card align-items-center text-bg-dark">
+            <i class="bi bi-quote"></i>
+            <p>STYLE IS A WAY TO SAY WHO YOU ARE WITHOUT HAVING TO SPEAK.</p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <img src="images/user-3.png">
+            <h3>Rachel Zoe</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------- Brands ------------------------>
 
+    <div class="container-fluid black">
+      <div class="brands">
+        <div class="row align-items-center text-bg-light">
+            <div class="col-3">
+              <div class="container">
+                <img src="images/ESewa.png" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="container">
+                <img src="images/Khalti.png" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="container">
+                <img src="images/IME PAY.png" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="container">
+                <img src="images/Phone Pay.png" class="img-fluid">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!--Products Page-->
+  <section id="products">
+    <div class="container-fluid pt-4 products px-5" style="font-family: poppins, sans-serif">
+      <div class="row">  
+        <div class="col"><h2 class="title">All Products</h2></div>
+      </div>
+      <div class="row p-3 pt-0 mt-0 px-5 mx-5">
+        <div class="col">
+          <select>
+            <option>Default Sorting</option>
+            <option>Sort by Price</option>
+            <option>Sort by Sale</option>
+            <option>Sort by Rating</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="row px-5 mx-5">
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/man1.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Shorts for Men</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 549</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/women1.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Stitched Ladies Kurti</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 595</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/kid1.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Baby Suit Unisex</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 750</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/boot.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Nylon Boys Predator</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 13,500</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row px-5 mx-5">
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Dzyne Printed Stiched Ladies Kurti.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Dzyne Printed Kurti</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 820</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Free-Fire T-shirt Unisex.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Free-Fire T-shirt Unisex</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 650</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Men Dress Shoes.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Men Dress Shoes</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 1,499</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Calliope Wide Pant.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Calliope Wide Pant</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 2,650</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row px-5 mx-5">
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/George Frock.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">George Frock</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 950</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Al Shirt.png"class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Al Shirt for Men</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 1,050</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Basic T-shirt.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Basic Women T-Shirt</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 750</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center align-items-center text-bg-dark">
+            <div class="container">
+              <img src="images/Cool Club Baby Trousers.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Cool Baby Trousers</h6>
+              <p class="card-text"><div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div></p>
+              <p class="card-footer">Rs 1,250</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid page-btn products pt-0 m-0 pb-5">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594</span>
+      </div>  
+    </div>
+  </section>
+  <!-- End Products -->
 
+  <!------------------footer----------------->
+
+  <div class="footer text-bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-3">
+          <h3>Download our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play store.png">
+            <img src="images/app store.png">
+          </div>
+        </div>
+        <div class="col-3">
+          <img src="images/logo.png" class="img-fluid">
+          <p>Our Purpose Is To Provide An Easy-To-Use Website Model, Espically For 
+            Small Business.</p>
+        </div>
+        <div class="col-3">
+          <ul>
+            <h3>Produced By</h3>
+            <li>Binaya Raj Thapa</li>
+            <li>Shubin Pokhrel</li>
+            <li>Shashwat Khadka</li>
+            <li>Siddhartha Lal Pradhan</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <h3>Follow us on</h3>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Linked In</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="thanks">THANK YOU FOR USING OUR WEBSITE</p>
+    </div>
+  </div>
   
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
+  <!--JS-->
+  <script src="hidenav.js"></script>
   <!--Bootstrap JS-->
   <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </body>
