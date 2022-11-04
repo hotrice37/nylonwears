@@ -20,46 +20,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
-<body> 
+<body class="black">
   <!--Navigation bar Start-->
-  <nav class="fixed-top autohide navbar navbar-expand-lg bg-dark" style="font-family:poppins, sans-serif">
-    <div class="container-fluid ps-5 ms-5">
-      <a class="navbar-brand text-uppercase text-white" href="#homepage"><h1>NylonWears</h1></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">  
-        <form class="d-flex ms-5 ps-5" role="search">
+  <div class="fixed-top container-fluid navbar navbar-expand-lg justify-content-around bg-dark text-white autohide" role="navigation"> 
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list-ul"></i>
+    </button>
+    <a class="navbar-brand text-uppercase text-white" href="#homepage">NylonWears</a>
+    <div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex" role="search">
           <input id="searchinput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button id="search" class="btn" type="submit"><i class="bi bi-search"></i></button>
         </form>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item dropdown ms-5 ps-5">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#products">All Products</a></li>
-              <li><a class="dropdown-item" href="#">Men</a></li>
-              <li><a class="dropdown-item" href="#">Women</a></li>
-              <li><a class="dropdown-item" href="#">Kids</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-2" aria-current="page" role="button" href="#login" data-bs-toggle="offcanvas"><i class="bi bi-person"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-2" aria-current="page" role="button" href="#cart" data-bs-toggle="offcanvas"><i class="bi bi-cart"></i></a>
-          </li>
-        </ul>
       </div>
     </div>
-  </nav> 
+    <div>
+      <div class="collapse navbar-collapse">
+        <div class="d-flex gap-4">
+          <div class="navbar-nav me-auto">
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#products">All Products</a></li>
+                <li><a class="dropdown-item" href="#">Men</a></li>
+                <li><a class="dropdown-item" href="#">Women</a></li>
+                <li><a class="dropdown-item" href="#">Kids</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-nav">
+            <div class="nav-item">
+              <a class="nav-link text-white" href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex gap-4">
+          <div class="navbar-nav">
+            <div class="nav-item">
+              <a class="nav-link text-white" aria-current="page" role="button" href="#login" data-bs-toggle="offcanvas"><i class="bi bi-person"></i></a>
+            </div>
+          </div>
+          <div class="navbar-nav">
+            <div class="nav-item">
+              <a class="nav-link text-white" aria-current="page" role="button" href="#cart" data-bs-toggle="offcanvas"><i class="bi bi-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Navigation bar End-->
 
   <!--Login Start-->
@@ -93,6 +111,53 @@
     </div>
   </div>
   <!--Login End-->
+
+  <!--Cart Start-->
+  <div class="offcanvas offcanvas-end" id="cart">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body"> 
+      <div class="cart_screen">
+        <h1>YOUR CART</h1>
+        <div class="cart">
+          <div class="cart_item">
+            <img src="images/1.jpg" alt="">
+            <div class="cart_item_info">
+              <h3>Product Name</h3>
+              <h4>Price</h4>
+              <h4>Quantity</h4>
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="images/2.jpg" alt="">
+            <div class="cart_item_info">
+              <h3>Product Name</h3>
+              <h4>Price</h4>
+              <h4>Quantity</h4>
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="images/3.jpg" alt="">
+            <div class="cart_item_info">
+              <h3>Product Name</h3>
+              <h4>Price</h4>
+              <h4>Quantity</h4>
+            </div>
+          </div>
+        </div>
+        <div class="total">
+          <h3>Total</h3>
+          <h3>Price</h3>
+        </div>
+        <div class="checkout">
+          <a href="#">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Homepage-->
   <section id="homepage">
@@ -385,34 +450,6 @@
             </div>
             <img src="images/user-3.png">
             <h3>Rachel Zoe</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-------------------------- Brands ------------------------>
-
-    <div class="container-fluid black">
-      <div class="brands">
-        <div class="row align-items-center text-bg-light">
-            <div class="col-3">
-              <div class="container">
-                <img src="images/ESewa.png" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="container">
-                <img src="images/Khalti.png" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="container">
-                <img src="images/IME PAY.png" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="container">
-                <img src="images/Phone Pay.png" class="img-fluid">
-              </div>
           </div>
         </div>
       </div>
